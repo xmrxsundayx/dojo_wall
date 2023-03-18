@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<div class="container">
+    <form action="/register" method="POST">
+        <h2>Registration Form</h2>
+        <label>First Name:</label>
+        <input class="info" type="text" name="first_name" required>
+        <label>Last Name:</label>
+        <input class="info" type="text" name="last_name" required>
+        <label>Email:</label>
+        <input class="info" type="email" name="email" required>
+        <label>Password:</label>
+        <input class="info" type="password" name="password" required>
+        <label>Confirm Password:</label>
+        <input class="info" type="password" name="confirm_password" required>
+        {% with messages = get_flashed_messages(category_filter=['reg']) %}
+        {% if messages %}
+            <ul> {% for message in messages %}
+                <li>{{message}}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <input class="button" type="submit" value="Submit">
+    </form>
+
+    <form action="/login" method="POST">
+        <h2>Login Form</h2>
+        <label>Email:</label>
+        <input class="info" type="email" name="email" required>
+        <label>Password:</label>
+        <input class="info" type="password" name="password" required>
+        {% with messages = get_flashed_messages(category_filter=['login']) %}
+        {% if messages %}
+            <ul> {% for message in messages %}
+                <li>{{message}}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+        <input class="button" type="submit" value="Login">
+    </form>
+</div>
+
+{% endblock %}

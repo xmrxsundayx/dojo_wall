@@ -1,0 +1,147 @@
+/* Style for registration and login forms */
+header {
+    width: 100%;
+    padding: 0 50px;
+}
+
+/* Round the corners */
+nav {
+    height: 75px;
+    border-radius: 0 0 50px 50px;
+}
+
+/* Add a gradient background */
+nav {
+    background: linear-gradient(to bottom, #525e79, #0074e4);
+}
+
+/* Style the website name */
+.website-name {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+    margin-right: 20px;
+    padding: 10px 0 10px 50px;
+}
+
+/* Center the nav links and add some spacing */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style the nav links */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Style for registration and login forms */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: slategray;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.container {
+    display: flex;
+    margin: 40px auto;
+}
+
+body {
+    background-color: aqua;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background: #eee;
+    font-size: 16px;
+}
+
+.button {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Styles for blog posts */
+h3 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-author {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post-date {
+    font-size: 16px;
+    color: #777777;
+}
+
+.post-body {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
